@@ -1,1 +1,0 @@
-![CV](https://github.com/dkushche/Curriculum_vitae/blob/master/D.R.Kushchevskyi.png?raw=true)
