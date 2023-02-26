@@ -1,12 +1,15 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{variants/curriculum_vitae}[2023/02/25]
 
-\LoadClass{article}
+\LoadClass[11pt]{article}
 
 \RequirePackage{fontspec}
 \RequirePackage{titlesec}
-\RequirePackage[margin=0.2in]{geometry}
+\RequirePackage[a4paper, left=1in, right=1in, bottom=1in, top=0.2in]{geometry}
 \RequirePackage{tikz}
+\RequirePackage{mdframed}
+
+\definecolor{custom_black}{RGB}{0, 1, 17}
 
 \graphicspath{ {./graphics} }
 
@@ -15,6 +18,7 @@
     Scale=1,
     Extension = .ttf,
     UprightFont=*-Regular,
+    Color=custom_black,
   ]
 
 \newcommand{\custombullet}{\includegraphics[width=0.5cm]{section}}
@@ -24,22 +28,27 @@
 {$\custombullet$}
 {1em}
 {}
+[\rule{\textwidth}{0.4pt}]
 
 \titleformat{\subsection}
 {\Large}
 {$\bullet$}
-{2em}
+{3em}
 {}
 
 \renewcommand{\maketitle} {
   \begin{center}
     \begin{tikzpicture}
 
-      \clip (0,0) circle (1.5cm);
-      \node at (0,0) {\includegraphics[width=3cm]{picture}};
+      \clip (0,0) circle (2cm);
+      \node at (0,0) {\includegraphics[width=4cm]{picture}};
 
     \end{tikzpicture}
     \break
-    \huge Dmytro Kushchevskyi
+    \LARGE Dmytro Kushchevskyi
+    \break
+    \rule{\textwidth}{1.2pt}
   \end{center}
 }
+
+\pagenumbering{Roman}
