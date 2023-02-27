@@ -9,40 +9,64 @@
 \RequirePackage{tikz}
 \RequirePackage{mdframed}
 \RequirePackage{fancyhdr}
+\RequirePackage{indentfirst}
+\RequirePackage{setspace}
+\RequirePackage{xpatch}
+
+\definecolor{primary_text_color}{RGB}{204, 204, 204}
+\definecolor{secondary_text_color}{RGB}{153, 153, 153}
+\definecolor{background_color}{RGB}{33, 33, 33}
+
+\onehalfspacing
 
 \pagenumbering{Roman}
 
 \setlength{\headheight}{45pt}
+\xpretocmd\headrule{\color{primary_text_color}}{}{\PatchFailed}
+
+\pagecolor{background_color}
 
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{\includegraphics[scale=0.07]{logo}}
-\cfoot{\thepage}
 
-\definecolor{text_color}{RGB}{0, 1, 17}
+\rhead{\includegraphics[scale=0.07]{logo}}
+
+\cfoot{\thepage}
 
 \graphicspath{ {./graphics} }
 
-\setmainfont{Audiowide}[
-    Path=./fonts/audiowide/,
+\setmainfont{Montserrat}[
+    Path=./fonts/montserrat/static/,
     Scale=1,
     Extension = .ttf,
     UprightFont=*-Regular,
-    Color=text_color,
-  ]
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    Color=secondary_text_color,
+]
+
+\setsansfont{LibreBaskerville}[
+    Path=./fonts/libre_baskerville/,
+    Scale=1,
+    Extension = .ttf,
+    UprightFont=*-Bold,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    Color=primary_text_color,
+]
 
 \newcommand{\custombullet}{\includegraphics[width=0.5cm]{section}}
 
 \titleformat{\section}
-{\Large}
-{$\custombullet$}
+{\sffamily\Large}
+{\textcolor{primary_text_color}{$\custombullet$}}
 {1em}
 {}
-[\textcolor{text_color}{\rule{\textwidth}{0.4pt}}]
+[\textcolor{primary_text_color}{\rule{\textwidth}{0.4pt}}]
 
 \titleformat{\subsection}
-{\Large}
-{\hspace{0.2in}$\bullet$}
+{\sffamily\Large}
+{\hspace{0.05in}\textcolor{secondary_text_color}{$\bullet$}}
 {1em}
 {}
 
@@ -55,8 +79,8 @@
 
     \end{tikzpicture}
     \break
-    \LARGE Dmytro Kushchevskyi
+    \LARGE\sffamily Dmytro Kushchevskyi
     \break
-    \rule{\textwidth}{1.2pt}
+    \textcolor{primary_text_color}{\rule{\textwidth}{1.2pt}}
   \end{center}
 }
