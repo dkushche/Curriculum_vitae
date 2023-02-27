@@ -50,8 +50,8 @@
   \begin{center}
     \begin{tikzpicture}
 
-      \clip (0,0) circle (2cm);
-      \node at (0,0) {\includegraphics[width=4cm]{picture}};
+      \clip (-0.5,0) circle (2cm);
+      \node at (0,0) {\includegraphics[width=6cm]{picture}};
 
     \end{tikzpicture}
     \break
