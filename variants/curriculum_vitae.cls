@@ -12,6 +12,7 @@
 \RequirePackage{indentfirst}
 \RequirePackage{setspace}
 \RequirePackage{xpatch}
+\RequirePackage[hidelinks]{hyperref}
 
 \definecolor{primary_text_color}{RGB}{204, 204, 204}
 \definecolor{secondary_text_color}{RGB}{153, 153, 153}
