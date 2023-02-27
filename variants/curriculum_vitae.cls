@@ -5,11 +5,21 @@
 
 \RequirePackage{fontspec}
 \RequirePackage{titlesec}
-\RequirePackage[a4paper, left=1in, right=1in, bottom=1in, top=0.2in]{geometry}
+\RequirePackage[a4paper, left=1in, right=1in, bottom=1in, top=0.6in]{geometry}
 \RequirePackage{tikz}
 \RequirePackage{mdframed}
+\RequirePackage{fancyhdr}
 
-\definecolor{custom_black}{RGB}{0, 1, 17}
+\pagenumbering{Roman}
+
+\setlength{\headheight}{45pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\includegraphics[scale=0.07]{logo}}
+\cfoot{\thepage}
+
+\definecolor{text_color}{RGB}{0, 1, 17}
 
 \graphicspath{ {./graphics} }
 
@@ -18,7 +28,7 @@
     Scale=1,
     Extension = .ttf,
     UprightFont=*-Regular,
-    Color=custom_black,
+    Color=text_color,
   ]
 
 \newcommand{\custombullet}{\includegraphics[width=0.5cm]{section}}
@@ -28,12 +38,12 @@
 {$\custombullet$}
 {1em}
 {}
-[\rule{\textwidth}{0.4pt}]
+[\textcolor{text_color}{\rule{\textwidth}{0.4pt}}]
 
 \titleformat{\subsection}
 {\Large}
-{$\bullet$}
-{3em}
+{\hspace{0.2in}$\bullet$}
+{1em}
 {}
 
 \renewcommand{\maketitle} {
@@ -50,5 +60,3 @@
     \rule{\textwidth}{1.2pt}
   \end{center}
 }
-
-\pagenumbering{Roman}
