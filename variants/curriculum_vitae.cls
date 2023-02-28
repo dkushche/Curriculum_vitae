@@ -12,11 +12,19 @@
 \RequirePackage{indentfirst}
 \RequirePackage{setspace}
 \RequirePackage{xpatch}
-\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{hyperref}
 
 \definecolor{primary_text_color}{RGB}{204, 204, 204}
 \definecolor{secondary_text_color}{RGB}{153, 153, 153}
 \definecolor{background_color}{RGB}{33, 33, 33}
+
+\hypersetup{
+  pdfborderstyle={/S/U/W 1},
+  linkbordercolor=primary_text_color,
+  citebordercolor=primary_text_color,
+  filebordercolor=primary_text_color,
+  urlbordercolor=primary_text_color
+}
 
 \onehalfspacing
 
