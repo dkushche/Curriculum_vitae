@@ -93,3 +93,5 @@
     \textcolor{primary_text_color}{\rule{\textwidth}{1.2pt}}
   \end{center}
 }
+
+\newcommand{\vintent}{\vspace{0.2in}}
