@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{variants/curriculum_vitae}[2023/02/25]
+\ProvidesClass{curriculum_vitae}[2023/02/25]
 
 \LoadClass[11pt]{article}
 
@@ -95,3 +95,20 @@
 }
 
 \newcommand{\vintent}{\vspace{0.2in}}
+
+\newcommand{\cvstart}[1]{
+  \lhead{\sffamily #1}
+
+  \begin{document}
+
+  \maketitle
+
+  \input{common/work_experience/main}
+  \input{common/education/main}
+}
+
+\newcommand{\cvend}{
+  \input{common/links/main}
+
+  \end{document}
+}

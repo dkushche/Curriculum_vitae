@@ -4,7 +4,7 @@
 
 all: full
 
-full: clean fonts results/full/CV_Dmytro_Kushchevskyi_full.pdf
+full: clean fonts results/CV_Dmytro_Kushchevskyi_full.pdf
 
 fonts:
 	mkdir fonts
