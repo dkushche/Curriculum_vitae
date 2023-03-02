@@ -105,6 +105,8 @@
 
   \input{common/work_experience/main}
   \input{common/education/main}
+
+  \newpage
 }
 
 \newcommand{\cvend}{
@@ -112,3 +114,5 @@
 
   \end{document}
 }
+
+\newcommand{\noprojects}{There are no projects available in this field for now}

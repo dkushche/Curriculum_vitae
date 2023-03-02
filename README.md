@@ -6,10 +6,13 @@ It's reasonable to keep structure as:
 
 ```mermaid
 graph TD;
+    Field-->Field_Description;
+    Field-->Level_of_Profiency;
     Field-->Field_Tools;
     Field-->Projects;
-    Field-->Level_of_Profiency;
+
     Field_Tools-->Skills;
+
     Projects-->Name_and_description;
     Projects-->Responsibilities;
     Projects-->Tools;
