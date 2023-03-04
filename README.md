@@ -14,6 +14,7 @@ graph TD;
     Field_Tools-->Skills;
 
     Projects-->Name_and_description;
+    Projects-->Type;
     Projects-->Responsibilities;
     Projects-->Tools;
 ```

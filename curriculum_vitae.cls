@@ -110,6 +110,10 @@
 }
 
 \newcommand{\cvend}{
+  \input{common/projects/main}
+
+  \newpage
+
   \input{common/links/main}
 
   \end{document}
