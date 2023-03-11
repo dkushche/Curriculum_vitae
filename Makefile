@@ -4,7 +4,7 @@
 
 all: full
 
-full: clean fonts results/CV_Dmytro_Kushchevskyi_full.pdf
+full: clean fonts results/CV_Dmytro_Kushchevskyi_full.pdf preview
 
 fonts:
 	mkdir fonts
@@ -16,6 +16,9 @@ fonts:
 	wget -O fonts/montserrat.zip https://fonts.google.com/download?family=Montserrat
 	unzip fonts/montserrat.zip -d fonts/montserrat
 	rm fonts/montserrat.zip
+
+preview:
+	evince-previewer results/CV_Dmytro_Kushchevskyi_full.pdf
 
 results/%.pdf: variants/%.tex
 	mkdir -p $(dir $@)
