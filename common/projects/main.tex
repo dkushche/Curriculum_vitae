@@ -2,200 +2,85 @@
 
 \hypertarget{proj_rhl}{\subsection{\href{https://github.com/dkushche/RooTHazardLab}{RooTHazardLab}}}
 \begin{itemize}
-    \item Project description:
+    \item \textbf{Project Description:} A private Kubernetes lab hosted on the Yggdrasil network and accessible via Alfis DNS. The core value is rapid deployment and sharing of home projects and tools without relying on public IP addresses or commercial DNS providers.
+    \item \textbf{Type:} Personal
+    \item \textbf{Responsibilities:}
     \begin{itemize}
-        \item A private Kubernetes lab is hosted on the Yggdrasil network and is accessible via Alfis DNS.
-              The core value is the ability to get home projects and tools up and running faster and
-              more efficiently, and share them without the need for 'white' IP addresses and commercial DNS
-              providers.
+        \item Defined lab concept: objectives and instrumentation
+        \item Investigated existing tools and methods to achieve goals
+        \item Built multiple prototypes
+        \item Deployed lab on existing hardware
     \end{itemize}
-    \item Type: Personal
-    \item Responsibilities:
-    \begin{itemize}
-        \item Definition concept of lab: main objective and instruments
-        \item Investigation of existing tools and methods to help achieve the goal
-        \item Building couple of prototypes
-        \item Create and Deploy Lab on existing hardware
-    \end{itemize}
-    \item Tools \& Technologies:
-    \begin{itemize}
-        \item Kubernetes
-        \item Helm
-        \item Ansible
-        \item Vagrant
-        \item Nginx proxy(ingress)
-        \item Python
-        \item Go
-        \item Jenkins
-        \item Yggdrasil
-        \item NFS
-        \item MetalLB
-        \item Clair
-        \item git-crypt
-        \item Docker Registry
-        \item Dockerd
-        \item containerd
-    \end{itemize}
+    \item \textbf{Tools \& Technologies:} Kubernetes, Helm, Ansible, Vagrant, Nginx (Ingress), Python, Go, Jenkins, Yggdrasil, NFS, MetalLB, Clair, git-crypt, Docker Registry, Docker, containerd
 \end{itemize}
 \newpage
 
 \hypertarget{proj_com4}{\subsection{Commercial 4}}
 \begin{itemize}
-    \item Project description:
+    \item \textbf{Project Description:} IoT connectivity provider enabling secure, automatic network access for smart devices.
+    \item \textbf{Type:} Commercial
+    \item \textbf{Responsibilities:}
     \begin{itemize}
-        \item The client is an IoT connection provider offering internet connectivity for any smart product,
-              automatically and securely, right out of the box.
+        \item Built test system infrastructure (HTTP(S) servers, Netlink, procfs, sysfs, DNS server mocks)
+        \item Improved OTA updates for Linux and FreeRTOS devices
+        \item Interacted with WiFi drivers using vendor APIs
+        \item Task management, colleague support, and participation in discussions
     \end{itemize}
-    \item Type: Commercial
-    \item Responsibilities:
-    \begin{itemize}
-        \item Building test system infrastructure
-              (HTTP(s) servers, Netlink, procfs, sysfs, DNS server mocks).
-        \item Improvement of OTA updates for Linux and FreeRTOS devices.
-        \item Interaction with wifi driver using vendor API.
-        \item Tasks management, colleagues support, participation in the discussions.
-    \end{itemize}
-    \item Tools \& Technologies:
-    \begin{itemize}
-        \item Python
-        \item Bash
-        \item C
-        \item Linux
-        \item FreeRTOS
-        \item Docker
-        \item Make
-        \item Jenkins
-        \item GitLab
-        \item Pytest
-        \item Netlink
-        \item dpkg
-        \item initd
-        \item systemd
-        \item mcuboot
-    \end{itemize}
+    \item \textbf{Tools \& Technologies:} Python, Bash, C, Linux, FreeRTOS, Docker, Make, Jenkins, GitLab, Pytest, Netlink, dpkg, initd, systemd, mcuboot
 \end{itemize}
 \newpage
 
 \hypertarget{proj_com3}{\subsection{Commercial 3}}
 \begin{itemize}
-    \item Project description:
+    \item \textbf{Project Description:} A service coordinating workers and managers, recording data for analytics and workflow improvements in smart warehouses and rugged work environments.
+    \item \textbf{Type:} Commercial
+    \item \textbf{Responsibilities:}
     \begin{itemize}
-        \item The service coordinates workers and managers and records all data in the
-              cloud for further analytics and workflow improvements in smart warehouses,
-              manufacturing facilities, field services, and in a variety of other rugged work
-              environments.
+        \item Updated wpa\_supplicant for industrial wearable devices
+        \item Fixed WiFi connection delay issues
     \end{itemize}
-    \item Type: Commercial
-    \item Responsibilities:
-    \begin{itemize}
-        \item Updating wpa\_supplicant for an industrial wearable device.
-        \item Fixing WiFi connection delay issue.
-    \end{itemize}
-    \item Tools \& Technologies:
-    \begin{itemize}
-        \item Android
-        \item ADB
-        \item C
-        \item wpa\_supplicant
-        \item netlink
-        \item make
-        \item repo
-        \item git
-    \end{itemize}
+    \item \textbf{Tools \& Technologies:} Android, ADB, C, wpa\_supplicant, netlink, make, repo, git
 \end{itemize}
 \newpage
 
 \hypertarget{proj_com2}{\subsection{Commercial 2}}
 \begin{itemize}
-    \item Project description:
+    \item \textbf{Project Description:} Developed universal firmware with a user-friendly UI for a custom router, enabling advanced network configuration and IoT integration.
+    \item \textbf{Type:} Commercial
+    \item \textbf{Responsibilities:}
     \begin{itemize}
-        \item The client had a custom router for which he needed firmware. The main task
-              was to create a universal firmware with a user-friendly UI, which makes it
-              possible possible to configure networks like on advanced routers, as well as to be a
-              station for IoT devices.
+        \item Improved custom WiFi router firmware
+        \item Developed UI for network policy management (VLANs, firewall)
+        \item Implemented internet resource filtering (black/white lists)
+        \item Configured captive portal and WiFi management
     \end{itemize}
-    \item Type: Commercial
-    \item Responsibilities:
-    \begin{itemize}
-        \item Improving custom WiFi router firmware
-        \item Adding user-friendly UI for network policies manipulation:
-              isolation (adding VLANs for L2, firewall settings for L3)
-        \item Blocking Internet resources(black/white listing)
-        \item Captive portal setup
-        \item Wifi management
-    \end{itemize}
-    \item Tools \& Technologies:
-    \begin{itemize}
-        \item OpenWRT
-        \item Lua
-        \item LuCI
-        \item ip
-        \item iptables
-        \item brctl
-        \item iw
-        \item wpa\_supplicant
-        \item dnsmasq
-        \item CoovaChilli
-        \item Squid transparent proxy
-        \item git
-        \item das u-boot
-    \end{itemize}
+    \item \textbf{Tools \& Technologies:} OpenWRT, Lua, LuCI, ip, iptables, brctl, iw, wpa\_supplicant, dnsmasq, CoovaChilli, Squid (transparent proxy), git, U-Boot
 \end{itemize}
 \newpage
 
 \hypertarget{proj_loxotron}{\subsection{\href{https://github.com/dkushche/Loxotron}{Loxotron Casino}}}
 \begin{itemize}
-    \item Project description:
+    \item \textbf{Project Description:} Supported and trained a team of schoolchildren to create their own modern web application.
+    \item \textbf{Type:} Charity
+    \item \textbf{Responsibilities:}
     \begin{itemize}
-        \item A project in which I supported and trained a team of schoolchildren to create their
-              own modern web application.
+        \item Managed entire project lifecycle
+        \item Configured CI/CD pipelines
+        \item Supported and trained students
+        \item Scheduled and participated in meetups
     \end{itemize}
-    \item Type: Charity
-    \item Responsibilities:
-    \begin{itemize}
-        \item All Project Management from initiation to the closing phase
-        \item CI/CD configuration
-        \item Support and training of students
-        \item Meetup scheduling and participation
-    \end{itemize}
-    \item Tools \& Technologies:
-    \begin{itemize}
-        \item Github Projects
-        \item Github Actions
-        \item Git
-        \item Yarn
-        \item Express JS
-        \item MongoDB
-        \item ReactJS
-        \item TypeScript
-        \item Webpack
-        \item Docker-compose
-        \item Ansible
-        \item Nginx proxy
-        \item Figma
-    \end{itemize}
+    \item \textbf{Tools \& Technologies:} GitHub Projects, GitHub Actions, Git, Yarn, ExpressJS, MongoDB, ReactJS, TypeScript, Webpack, Docker Compose, Ansible, Nginx, Figma
 \end{itemize}
 \newpage
 
 \hypertarget{proj_com1}{\subsection{Commercial 1}}
 \begin{itemize}
-    \item Project description:
+    \item \textbf{Project Description:} Secured legacy software by identifying and fixing unsafe libc function calls (e.g., strcpy), mitigating buffer overflow risks.
+    \item \textbf{Type:} Commercial
+    \item \textbf{Responsibilities:}
     \begin{itemize}
-        \item The client had a project that used unsafe functions from libc, such as strcpy. It
-              created security risks and potential overflows. The main objective was to find
-              a and fix all unsafe calls.
+        \item Secured libc function calls in existing software
     \end{itemize}
-    \item Type: Commercial
-    \item Responsibilities:
-    \begin{itemize}
-        \item Securing libc functions calls in existed software.
-    \end{itemize}
-    \item Tools \& Technologies:
-    \begin{itemize}
-        \item C
-        \item Linux
-        \item Redmine
-        \item GitLab
-    \end{itemize}
+    \item \textbf{Tools \& Technologies:} C, Linux, Redmine, GitLab
 \end{itemize}
 \newpage
